@@ -16,15 +16,16 @@ public class ArrayListExam {
 		Member mem2 = new Member(11, "kang", "kkk", "강", "kmail", 0); //10명의 회원이 들어간것
 		memList.add(mem2);
 		
-		for(Member m:memList) {		//list의 순회1
+		for(Member m:memList) {		
+			//list의 순회1
 			System.out.println(m.toString());
 		}
 		
 		memList.remove(3);  //인덱스가 3인 멤버 인스턴스가 제거됨
 		Member tmp1 = new Member(11, "kang", "kkk", "강", "kmail", 0);
 		
-		System.out.println(tmp1.getId() + "의 존재유무 : "+ memList.contains(tmp1));
-		
+		System.out.println(tmp1.getId() + "의 존재유무 : "+ memList.contains("kang"));
+//		memList.add();
 		
 		for (int i=1; i<memList.size(); i++) {		//list의 순회2
 			Member m = memList.get(i);

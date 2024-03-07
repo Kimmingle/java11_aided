@@ -15,7 +15,6 @@ public class StudentExam {
 		System.out.println(su1.toString()); /// su1 인스턴스에 대한 스택에 있는 힙의 주소를 (16진수)가져옴
 		System.out.println(su1.equals(su2));  //두 객체(인스턴스)가 같은지 비교
 		System.out.println(su1.hashCode());  //16진수를 10진수로 (해시코드 출력)
-		
 		System.out.println(su3.equals(su1)); 
 	}
 
