@@ -25,8 +25,6 @@ public class WithResorceExam {
 				e.printStackTrace();
 			}
 				
-			
-			
 		}
 		
 	}

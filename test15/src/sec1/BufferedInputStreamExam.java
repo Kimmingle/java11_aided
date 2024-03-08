@@ -18,13 +18,13 @@ public class BufferedInputStreamExam {
 			} catch (Exception e ) {
 				System.out.println("파일 읽기 실패");
 			}finally {
-				if (input != null) {
-					try {
-					
-						
-					}catch(IOException e) {
-						System.out.println();
-				}
+//				if (input != null) {
+//					try {
+//					
+//						
+//					}catch(IOException e) {
+//						System.out.println();
+//				}
 			}
 		}
 	}

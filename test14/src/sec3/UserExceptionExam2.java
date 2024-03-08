@@ -1,6 +1,6 @@
 package sec3;
 
-class PwFormatException extends Exception{
+class PwFormatException extends Exception{   		//가장 상위클래스인 Exception 에서 상속받음
 	public PwFormatException(String ms) {
 		System.out.println("ms : "+ms);
 		System.out.println("암호 형식 불일치");
