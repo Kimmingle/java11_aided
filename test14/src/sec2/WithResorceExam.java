@@ -2,31 +2,27 @@ package sec2;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 
-class AutoResorce implements AutoClose{
+class AutoResource implements AutoCloseable{
 
 	@Override
-	public int close() throws Exception {
+	public void close() throws Exception {
 		System.out.println("리소스 자동 close");
 
-
+	}
 }
 
 public class WithResorceExam {
 
-	public static void main(String[] args) throws Exceprion {
+	public static void main(String[] args) throws Exception {
 		
-		FileInputStream fis = null;
-		fis = new FileInputStream("a.txt");
-		if (fis != null) {
-			try  (AutoResource obj = new AutoResource()){
-				throw new Exception();
-			} catch  (IOException e){
-				e.printStackTrace();
-			}
-				
+		try (AutoResource obj = new AutoResource()){
+			throw new Exception();
+		} catch  (IOException e){
+			System.out.println("예외부분");
 		}
-		
+				
 	}
 
 }

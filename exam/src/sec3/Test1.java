@@ -17,22 +17,34 @@ public class Test1 {
 		ipInfoList.add(new IPInfo("212.133.111.222", "어쩌고"));  //하나 빠짐
 		ipInfoList.add(new IPInfo("111.151.155.333", "고길순"));
 		
+		
+		
 		System.out.println("ip 입력  :");
-		String ip = sc.next();
+		double ip = sc.nextInt();
 		
-		for(int i=0; i<ipInfoList.size(); i++) {
-			if(ipInfoList.get(i).getIp().equals(ip)) { 
-				System.out.println("일치하는  ip사용자가 있습니다.");
-				System.out.println(ipInfoList.get(i));
-				
-
-			}else {
-				System.out.println("일치하는  ip사용자가 없습니다.");
-			}
-			break;
+		if (ip == ipInfoList.indexOf(0)) {
+			System.out.println("홍길동");
+			System.out.println("일치하는  ip사용자가 있습니다.");
+		} else if (ip == ipInfoList.indexOf(1)) {
+			System.out.println("어쩌고");
+			System.out.println("일치하는  ip사용자가 있습니다.");
+		} else if (ip == ipInfoList.indexOf(2)) {
+			System.out.println("고길순");
+			System.out.println("일치하는  ip사용자가 있습니다.");
 		}
+	
 		
 		
+//		for(int i=0; i<ipInfoList.size(); i++) {
+//			if(ipInfoList.get(i).getIp().equals(ip)) { 		   
+//				System.out.println("일치하는  ip사용자가 있습니다.");
+//				System.out.println(ipInfoList.get(i));
+//				break;
+//				
+//			}else {
+//				System.out.println("일치하는  ip사용자가 없습니다.");
+//				break;
+//			}
+//		}	
 	}
-
 }

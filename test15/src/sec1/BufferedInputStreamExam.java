@@ -25,7 +25,7 @@ public class BufferedInputStreamExam {
 //					}catch(IOException e) {
 //						System.out.println();
 //				}
-			}
+			
 		}
 	}
 

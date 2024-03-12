@@ -16,11 +16,11 @@ public class ThrowsExam2 {
 	}
 	
 	public static void arrayPassing(int[] arr) throws ArrayIndexOutOfBoundsException{
-		int tot;
+		int tot=0;
 		for (int i=0; i<10; i++) {
 			System.out.println(arr[i]);
 			tot += arr[i];
 		}
-//		System.out.println(arr[i]);
+		System.out.println(tot);
 	}
 }
