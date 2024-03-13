@@ -20,31 +20,38 @@ public class Test1 {
 		
 		
 		System.out.println("ip 입력  :");
-		double ip = sc.nextInt();
+		String ip = sc.next();
 		
-		if (ip == ipInfoList.indexOf(0)) {
-			System.out.println("홍길동");
-			System.out.println("일치하는  ip사용자가 있습니다.");
-		} else if (ip == ipInfoList.indexOf(1)) {
-			System.out.println("어쩌고");
-			System.out.println("일치하는  ip사용자가 있습니다.");
-		} else if (ip == ipInfoList.indexOf(2)) {
-			System.out.println("고길순");
-			System.out.println("일치하는  ip사용자가 있습니다.");
-		}
+//		if (ip == ipInfoList.indexOf(0)) {
+//			System.out.println("홍길동");
+//			System.out.println("일치하는  ip사용자가 있습니다.");
+//		} else if (ip == ipInfoList.indexOf(1)) {
+//			System.out.println("어쩌고");
+//			System.out.println("일치하는  ip사용자가 있습니다.");
+//		} else if (ip == ipInfoList.indexOf(2)) {
+//			System.out.println("고길순");
+//			System.out.println("일치하는  ip사용자가 있습니다.");
+//		}
 	
+		boolean sw = false;
 		
 		
-//		for(int i=0; i<ipInfoList.size(); i++) {
-//			if(ipInfoList.get(i).getIp().equals(ip)) { 		   
+		for(int i=0; i<ipInfoList.size(); i++) {
+			if(ipInfoList.get(i).getIp().equals(ip)) { 		   
 //				System.out.println("일치하는  ip사용자가 있습니다.");
 //				System.out.println(ipInfoList.get(i));
-//				break;
-//				
-//			}else {
+				sw = true;
+				break;
+				
+			}else {
 //				System.out.println("일치하는  ip사용자가 없습니다.");
-//				break;
-//			}
-//		}	
+				break;
+			}
+		}	
+		if (sw) {
+			System.out.println("포함");
+		}else {
+			System.out.println("미포함");
+		}
 	}
 }
