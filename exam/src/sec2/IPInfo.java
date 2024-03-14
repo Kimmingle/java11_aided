@@ -1,4 +1,4 @@
-package sec3;
+package sec2;
 
 public class IPInfo {
 	

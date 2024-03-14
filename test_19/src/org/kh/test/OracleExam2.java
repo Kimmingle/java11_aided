@@ -20,7 +20,7 @@ public class OracleExam2 {
 		String userpw = "1234";
 		String sql = "insert into student values(?,?,?)";
 //		Student st = new Student(6, "조대신", 90);  이미 한번 실행했으니까 데이터 들어갔으므로 주석처리
-		Student st = new Student(8, "강대신", 80);
+		Student st = new Student(9, "강대신", 80);
 		int i = 0;
 		
 		try {

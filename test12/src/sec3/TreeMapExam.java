@@ -27,7 +27,7 @@ public class TreeMapExam {
 		//특정요소 제거
 		map2.remove(4);
 		//TreeMap비우기
-		map2.clear();
+//		map2.clear();
 		//TreeMap순회하기
 		for (Integer i:map2.keySet()) {
 			System.out.println(i +" : "+map2.get(i));
