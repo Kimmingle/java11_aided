@@ -12,13 +12,14 @@ public class MariaDBExam5 {
 		ResultSet rs = null;
 		
 		MariaDB mr = new MariaDB();
-		try {
-			con= mr.connect();
-			pstmt = con.prepareStatement(sql);
-			rs= pstmt.executeQuery();
-		}catch(){
-			
-		}
+//		try {
+//			con= mr.connect();
+//			pstmt = con.prepareStatement(sql);
+//			rs= pstmt.executeQuery();
+//		}catch(){
+//			
+//		}
+	
 		
 		
 		
