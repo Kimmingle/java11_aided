@@ -90,9 +90,13 @@ public class MemberExam {
 		System.out.println("삭제할 회원 구분코드 입력 : ");
 		int rmcd = sc.nextInt();
 		
-		
-	
-//		memList.removeIf((item) -> item.getMcode().equals(rmcd) );
+//		if(memList.getMcode().equals(name)) {
+//			memberiter.remove();
+//			System.out.println(name + "회원이 삭제되었습니다.");
+//			return;
+//		}
+
+		memList.removeIf((item) -> item.getMcode()==rmcd );
 		list1();
 	}
 
