@@ -1,4 +1,4 @@
-package sec3;
+package sec1;
 
 public class ChatServerExam {
 

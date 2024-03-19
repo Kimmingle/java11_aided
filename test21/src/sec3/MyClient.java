@@ -19,7 +19,7 @@ public class MyClient {
 		Scanner sc = new Scanner (System.in);  //나중엔 여기만 웹페이지로 바꿔주면 됨
 		
 		try {
-			socket = new Socket("192.168.20.205", 6005);    //Q.상대방이랑 포트번호는 달라도 되
+			socket = new Socket("192.168.20.205", 6005);    //Q.상대방이랑 포트번호는 달라도 되나(안되는듯)
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new PrintWriter(socket.getOutputStream());
 			
